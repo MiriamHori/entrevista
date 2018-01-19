@@ -14,7 +14,9 @@ public class CalculadoraAction extends Action{
 			HttpServletResponse response) throws Exception {
 		
 		CalculadoraForm calculadoraForm = (CalculadoraForm) form;
+		//alteração
 		Double resultado;
+		
 		if(calculadoraForm.getAcao().equals("somar")) {
 			resultado = calculadoraForm.getValorA()+calculadoraForm.getValorB();
 			System.out.println("entrou em somar");
